@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__image" src="assets/images/developer.png" alt="Logo">
+        <h1>Encriptador y Desencriptador</h1>
+    </header>
+    <main class="content">
+        <section class="content__left__section">
+            
+            <div class="content__bottom">
+                <textarea class="content__section__textarea" name="texto" id="texto" placeholder="Ingrese su texto aquí"></textarea>
+                <div class="content__section__buttons">
+                    <div class="content__bottom__text">
+                        <img src="assets/icons/bi--exclamation-circle-fill.svg" alt="">
+                        <p>Solo letras minúsculas y sin acento</p>
+                    </div>
+
+                    <button onclick={encriptar()} class="btn btn__left">Encriptar</button>
+                    <button onclick={desencriptar()} class="btn btn__right">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section id="right-section" class="content__right__section">
+            <img id="imagen" class="content__right__section__imagen" src="assets/images/safety-2.png" alt="Imagen">
+            <h2 id="subtitle" class="content__right__section__subtitle">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo" class="content__right__section__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div id="copiar" class="content__right__section__bottom">
+                <button id="btn-copy" onclick={copiarTexto()} class="btn btn__right">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy <a href="#" class="footer__link">Diseñado por Flavio Jara R.</a>
+        <a href="#"><img class="footer__link footer__link__icon" src="assets/icons/github.svg" alt="github"></a>
+        <a href="#"><img class="footer__link footer__link__icon" src="assets/icons/linkedin.svg" alt="github"></a>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+
+</html>
