@@ -6,6 +6,12 @@ var parrafoInicial = "Ingresa el texto que desees encriptar o desencriptar.";
 var botonCopiar = document.getElementById("copiar");
 var rightSection = document.getElementById("right-section");
 
+textArea.addEventListener("keydown", (event) => {
+    if (event.key === "Enter"){
+        event.preventDefault();
+    }
+})
+
 const encriptar = () => {
     if (textArea.value != "") {
         imagen.style.display = "none";
